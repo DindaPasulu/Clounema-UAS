@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment"
-    android:orientation="vertical">
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:id="@+id/profile_details">
+
     <LinearLayout
         android:id="@+id/navbar"
         android:layout_width="match_parent"
@@ -15,7 +17,7 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/back_arrow"
+            android:id="@+id/arrow_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_arrow_back"/>

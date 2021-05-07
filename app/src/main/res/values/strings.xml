@@ -3,6 +3,10 @@
     <string name="first_name">Google</string>
     <string name="last_name">App</string>
     <string name="email">google@google.com</string>
+    <string name="movie_title1">Avengers</string>
+    <string name="movie_title2">Deadpool 2</string>
+    <string name="movie_title3">Joker</string>
+    <string name="movie_year1">2012</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

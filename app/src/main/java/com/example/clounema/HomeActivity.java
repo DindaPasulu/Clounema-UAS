@@ -13,53 +13,36 @@ import android.view.WindowManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
-
+    //Initialize bottom navbar
     BottomNavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        //assign variable
         navigationView = findViewById(R.id.bottom_navbar);
-        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
+        //set home selected
         navigationView.setSelectedItemId(R.id.nav_home);
-        /*
-        NavHostFragment navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment);
-        NavController navController = navHostFragment.getNavController();
-        NavigationUI.setupWithNavController(bottomNav, navController);
 
-        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
-            @Override
-            public void onDestinationChanged(@NonNull NavController controller,
-                                             @NonNull NavDestination destination, @Nullable Bundle arguments) {
-                if(destination.getId() == R.id.full_screen_destination) {
-                    toolbar.setVisibility(View.GONE);
-                    bottomNavigationView.setVisibility(View.GONE);
-                } else {
-                    toolbar.setVisibility(View.VISIBLE);
-                    bottomNavigationView.setVisibility(View.VISIBLE);
-                }
-            }
-        });*/
+        //ItemSelectedList
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment fragment = null;
                 switch (item.getItemId()){
                     case R.id.nav_home:
-                        fragment = new HomeFragment();
-                        break;
-
+                        return true;
                     case R.id.nav_ticket:
-                        fragment = new TicketFragment();
-                        break;
-
+                        startActivity(new Intent(getApplicationContext(),
+                                OrderDetails.class));
+                        overridePendingTransition(0,0);
+                        return true;
                     case R.id.nav_profile:
-                        fragment = new ProfileFragment();
-                        break;
+                        startActivity(new Intent(getApplicationContext(),
+                                ProfileActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
-                return true;
+                return false;
             }
         });
     }
