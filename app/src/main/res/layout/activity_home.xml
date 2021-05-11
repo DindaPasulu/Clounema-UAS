@@ -38,112 +38,100 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/purple"
-                android:layout_marginBottom="@+id/navbar"/>
+                android:background="@color/purple"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sedang Tayang"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="9dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:text="Sedang Tayang"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/poppins_bold"/>
+                    android:layout_marginEnd="15dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/attract1"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        android:src="@drawable/ic_icon_google"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/poster_bg"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/attract2"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        android:src="@drawable/ic_icon_google"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/poster_bg"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="15dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/attract3"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        android:src="@drawable/ic_icon_google"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/poster_bg"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/attract4"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        android:src="@drawable/ic_icon_google"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/poster_bg"/>
+                </RelativeLayout>
+
             </LinearLayout>
 
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="220dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RelativeLayout
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="15dp">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:id="@+id/attract1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:scaleType="centerCrop"
-                            app:shapeAppearanceOverlay="@style/roundedImageView"
-                            android:src="@drawable/avengers"/>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/poster_bg"/>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="15dp">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:id="@+id/attract2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:scaleType="centerCrop"
-                            app:shapeAppearanceOverlay="@style/roundedImageView"
-                            android:src="@drawable/wonder_woman"/>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/poster_bg"/>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="15dp">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:id="@+id/attract3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:scaleType="centerCrop"
-                            app:shapeAppearanceOverlay="@style/roundedImageView"
-                            android:src="@drawable/joker"/>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/poster_bg"/>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="15dp">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:id="@+id/attract4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:scaleType="centerCrop"
-                            app:shapeAppearanceOverlay="@style/roundedImageView"
-                            android:src="@drawable/deadpool2"/>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/poster_bg"/>
-                    </RelativeLayout>
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
+        </HorizontalScrollView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -170,7 +158,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/avengers"/>
+                            android:src="@drawable/ic_icon_google"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -201,7 +189,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/avengers"/>
+                            android:src="@drawable/ic_icon_google"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -232,7 +220,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/avengers"/>
+                            android:src="@drawable/ic_icon_google"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -263,7 +251,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/avengers"/>
+                            android:src="@drawable/ic_icon_google"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -294,7 +282,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/avengers"/>
+                            android:src="@drawable/ic_icon_google"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -325,7 +313,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/avengers"/>
+                            android:src="@drawable/ic_icon_google"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
