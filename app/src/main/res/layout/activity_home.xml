@@ -38,7 +38,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/purple"/>
+                android:background="@color/main_color"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
                     android:layout_marginEnd="15dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/attract1"
+                        android:id="@+id/movie1"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         app:shapeAppearanceOverlay="@style/roundedImageView"
@@ -72,7 +72,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/poster_bg"/>
+                        android:background="@drawable/poster_bg" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -81,7 +81,7 @@
                     android:layout_marginEnd="15dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/attract2"
+                        android:id="@+id/movie2"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         app:shapeAppearanceOverlay="@style/roundedImageView"
@@ -99,7 +99,7 @@
                     android:layout_marginEnd="15dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/attract3"
+                        android:id="@+id/movie3"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         app:shapeAppearanceOverlay="@style/roundedImageView"
@@ -117,7 +117,7 @@
                     android:layout_marginEnd="15dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/attract4"
+                        android:id="@+id/movie4"
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         app:shapeAppearanceOverlay="@style/roundedImageView"
@@ -156,6 +156,7 @@
                         android:layout_margin="5dp">
 
                         <ImageView
+                            android:id="@+id/movie5"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_icon_google"/>
@@ -187,6 +188,7 @@
                         android:layout_margin="5dp">
 
                         <ImageView
+                            android:id="@+id/movie6"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_icon_google"/>
@@ -218,6 +220,7 @@
                         android:layout_margin="5dp">
 
                         <ImageView
+                            android:id="@+id/movie7"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_icon_google"/>
@@ -249,6 +252,7 @@
                         android:layout_margin="5dp">
 
                         <ImageView
+                            android:id="@+id/movie8"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_icon_google"/>

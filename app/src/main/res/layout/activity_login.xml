@@ -48,7 +48,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="LOGIN"
         android:textColor="@drawable/btn_bg_color1"
-        android:backgroundTint="@color/purple"
+        android:backgroundTint="@color/main_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

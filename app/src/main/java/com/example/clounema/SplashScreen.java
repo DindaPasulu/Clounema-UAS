@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 
+import com.example.clounema.Onboarding.OnBoardingOne;
+
 public class SplashScreen extends AppCompatActivity {
 
     /** Duration of wait **/
@@ -20,7 +22,7 @@ public class SplashScreen extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), OnBoardingOne.class));
                 finish();
             }
         }, 3000L); //3000 L = 3 detik
